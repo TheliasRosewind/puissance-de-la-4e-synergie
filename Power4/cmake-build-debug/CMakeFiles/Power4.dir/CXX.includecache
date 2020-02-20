@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Documents/C_Project/Power4/ai/mcts.cpp
+mcts.h
+D:/Documents/C_Project/Power4/ai/mcts.h
+cstdlib
+-
+cstdio
+-
+cfloat
+-
+cmath
+-
+ctime
+-
+
+D:/Documents/C_Project/Power4/ai/mcts.h
+../game/power4.h
+D:/Documents/C_Project/Power4/game/power4.h
+
+D:/Documents/C_Project/Power4/game/power4.h
+
+D:/Documents/C_Project/Power4/main.cpp
+game/power4.h
+D:/Documents/C_Project/Power4/game/power4.h
+ai/mcts.h
+D:/Documents/C_Project/Power4/ai/mcts.h
+utils/utils.h
+D:/Documents/C_Project/Power4/utils/utils.h
+cstdlib
+-
+cstdio
+-
+getopt.h
+-
+
+D:/Documents/C_Project/Power4/utils/utils.h
+stdbool.h
+-
+
