@@ -1,3 +1,0 @@
-D:/Documents/C_Project/Power4/cmake-build-debug/CMakeFiles/Power4.dir
-D:/Documents/C_Project/Power4/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Documents/C_Project/Power4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
