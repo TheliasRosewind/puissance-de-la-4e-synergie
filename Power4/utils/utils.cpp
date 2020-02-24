@@ -29,9 +29,10 @@ int clean_stdin(void) {
 bool convertStringToDouble(char* string, double* result) {
     char * end = NULL;
     errno = 0;
+    long temp = strtod(string, &end);
 
     if (*end == '\0' && errno != ERANGE) {
-        *result = strtod(string, &end);
+        *result = temp;
         return true;
     }
     return false;
