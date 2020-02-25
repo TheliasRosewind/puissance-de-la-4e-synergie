@@ -45,7 +45,6 @@ int main(int argc, char **argv) {
         double doubleResult = 0;
 
         switch (opt) {
-
             //time limit for the MCTS algo
             case 't' :
                 if (convertStringToDouble(optarg, &doubleResult) && doubleResult > 0) {
@@ -120,7 +119,7 @@ int main(int argc, char **argv) {
     if (!timeFlag && iterations >= 0)
         time = -1;
 
-    Action *action = NULL;
+    Action *action = nullptr;
     EndGame end;
 
     State *state = initialState();
@@ -144,7 +143,7 @@ int main(int argc, char **argv) {
             int possibleAction = 0;
             do {
                 action = askAction();
-                if (action != NULL) {
+                if (action != nullptr) {
                     possibleAction = playAction(state, action);
                     free(action);
                 }

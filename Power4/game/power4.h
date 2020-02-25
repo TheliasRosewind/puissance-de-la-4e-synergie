@@ -7,10 +7,10 @@
 // Macros
 #define OTHER_PLAYER(i) (1-(i))
 
-/** Critères de fin de partie */
+/** Endpoint for end game */
 typedef enum { NO, DRAW, AI_WIN, PLAYER_WIN } EndGame;
 
-/** Définition of State State (état/position du jeu) */
+/** Definition of State State (état/position du jeu) */
 typedef struct {
 
     int player; // Who's play
@@ -20,7 +20,7 @@ typedef struct {
 
 } State;
 
-/** Définition of Action type */
+/** Definition of Action type */
 typedef struct {
 
     int column;
@@ -31,7 +31,7 @@ typedef struct {
 State * copyState(State * src);
 
 /** Initial State */
-State * initialState(void);
+State * initialState();
 
 /** Display the boardGame */
 void displayGame(State * state);
@@ -41,7 +41,7 @@ Action * newAction(int col);
 
 /** Ask to the player wich action play
     Return NULL if input is incorrect */
-Action * askAction(void);
+Action * askAction();
 
 /** Modify the state in play an action
     Return 0 if the action is impossible*/

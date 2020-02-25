@@ -5,8 +5,6 @@
 #ifndef POWER4_UTILS_H
 #define POWER4_UTILS_H
 
-#include <stdbool.h>
-
 /**
    Tools function.
 */
@@ -16,7 +14,7 @@
 bool convertStringToInt(char * string, int * result);
 
 /** Clean standard entry */
-int clean_stdin(void);
+int clean_stdin();
 
 /** Convertit un string (char*) en double et stocke le résultat dans result.
     Retourne true si la conversion s'est déroulée correctement, false sinon. */
