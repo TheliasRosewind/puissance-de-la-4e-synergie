@@ -14,6 +14,8 @@
 
 #define CONSTANTE_C 1.4142
 
+int totalSimusByProgramm = 0;
+
 Node * newNode (Node * parent, Action * action) {
     Node * node = (Node *)malloc(sizeof(Node));
 
@@ -276,7 +278,10 @@ void mcts(State * state, double timeMax, int iterationMax, MethodActionChoice me
         printf("\nEstimate probability of victory for AI : ");
         if (nodeBestAction->nb_simus > 0) printf("%0.2f %%", (double)nodeBestAction->nb_victory / nodeBestAction->nb_simus * 100);
         else printf("None");
+        totalSimusByProgramm += root->nb_simus;
+        printf("\nSum of simulations : %d", totalSimusByProgramm);
         printf("\n");
+
     }
     playAction(state, bestAction);
     freeNode(root);
