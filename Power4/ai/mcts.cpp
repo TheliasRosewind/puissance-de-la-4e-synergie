@@ -102,7 +102,6 @@ Node * extendNode(Node * node) {
                 break;
             }
         }
-
         if (alreadyDevelopped) {
             free(actions[k]);
             int j = k;
@@ -153,7 +152,6 @@ EndGame simulateGame(State * state, bool chooseWinAction) {
         }
         free(actions);
     }
-
     return endGameResult;
 }
 

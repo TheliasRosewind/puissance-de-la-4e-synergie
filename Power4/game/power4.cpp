@@ -59,12 +59,10 @@ Action * askAction() {
 
 int playAction(State * state, Action * action) {
 
-    // The Action is impossible if it's not in the limit
-    // ou si la column est rempli (donc premiére ligne occupée)
     if (action->column < 0 || action->column >= ARRAY_LENGTH(state->boardGame[0]) ||
     state->boardGame[0][action->column] != ' ') return 0;
     int playedLine = -1;
-    int row = ARRAY_LENGTH(state->boardGame) - 1; // start of the bottom of the boardGame (derniére ligne donc)
+    int row = ARRAY_LENGTH(state->boardGame) - 1;
     while (row >=0 && playedLine == -1) {
         if (state->boardGame[row][action->column] == ' ') playedLine = row;
         else row--;
@@ -87,7 +85,7 @@ Action ** possibleAction(State * state) {
             k++;
         }
     }
-    action[k] = NULL;
+    action[k] = nullptr;
     return action;
 }
 
