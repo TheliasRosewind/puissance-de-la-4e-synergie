@@ -21,15 +21,15 @@ typedef struct NodeSt {
     int player; // player who played for arrived here
     Action * action;   // action played by this playyer to arrived here
 
-    State * state; // state du jeu
+    State * state;
 
     struct NodeSt * parent;
     struct NodeSt * childrens[LARGEUR_MAX]; // childrens list rach children associate to a possible action
     int nb_children;	// number of children in the list
 
     // FOR MCTS:
-    int nb_victory;   // Pour calculer les stats
-    double sumReward;  // Pour calculer la B-valeur (car match nul pris en compte)
+    int nb_victory;
+    double sumReward;
     int nb_simus;
 
 } Node;

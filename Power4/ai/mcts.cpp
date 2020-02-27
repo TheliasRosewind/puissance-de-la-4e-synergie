@@ -33,7 +33,7 @@ Node * newNode (Node * parent, Action * action) {
     node->parent = parent;
     node->nb_children = 0;
 
-    // POUR MCTS:
+    //FOR MCTS:
     node->nb_victory = 0;
     node->sumReward = 0;
     node->nb_simus = 0;

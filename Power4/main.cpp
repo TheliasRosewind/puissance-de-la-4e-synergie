@@ -131,7 +131,6 @@ int main(int argc, char **argv) {
     } while (((scanf("%d%c", &(state->player), &c) != 2 || c != '\n') && clean_stdin()) ||
              (state->player != 0 && state->player != 1));
 
-    // boucle de jeu
     do {
         printf("\n");
         displayGame(state);
