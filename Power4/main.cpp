@@ -11,7 +11,6 @@ int main(int argc, char **argv) {
 
     //------- DISPLAY PARAMETERS ----------
     int verboseLevel = 1;
-    bool printHelp = false;                                     // Print the futur help page for the multiple options
 
     // Defaul tvalue
     // time : 5s
